@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 px-4 md:px-8">
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              <span className="text-primary">Shua</span> Makeup & Beauty
+              <span className="text-primary">Shua</span> <span className="text-fuchsia-500">Makeup</span> & <span className="text-fuchsia-500">Beauty</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8">
               Resalta tu belleza natural con nuestros servicios profesionales

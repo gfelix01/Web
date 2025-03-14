@@ -49,9 +49,9 @@ export function Footer() {
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-lg font-bold mb-4">Horario</h3>
           <ul className="text-gray-600">
-            <li>Lunes a Viernes: 9:00 AM - 7:00 PM</li>
-            <li>Sábados: 9:00 AM - 6:00 PM</li>
-            <li>Domingos: Cerrado</li>
+            <li>Lunes a Sabado: 8:00 AM - 7:00 PM</li>
+            <li>Domingos y Feriados: 8:00 AM - 2:00 PM</li>
+
           </ul>
         </div>
       </div>
