@@ -18,7 +18,7 @@ export function Navbar() {
 
         {/* Mobile menu button */}
         <button className="block md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMenuOpen ? <X size={24} className="text-primary" /> : <Menu size={24} className="text-primary" />}
         </button>
 
         {/* Desktop navigation */}
@@ -38,7 +38,7 @@ export function Navbar() {
           <Link href="/contacto" className="text-sm font-medium transition-colors hover:text-primary">
             Contacto
           </Link>
-          <Button asChild variant="default" className="bg-primary hover:bg-primary/90">
+          <Button asChild variant="default" className="bg-primary hover:bg-primary/90 animate-pulse-fuchsia">
             <Link href="tel:8296418720" className="flex items-center gap-2">
               <Phone size={16} />
               <span>829-641-8720</span>

@@ -5,7 +5,7 @@ import { MapPin, Phone, Instagram } from "lucide-react"
 export function Footer() {
   return (
     <footer className="bg-gray-100 py-12">
-      <div className="container grid gap-8 md:grid-cols-3 items-center">
+      <div className="container grid gap-8 md:grid-cols-3">
         <div className="flex flex-col items-center md:items-start">
           <Image
             src="/images/logo.png"
@@ -49,16 +49,17 @@ export function Footer() {
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-lg font-bold mb-4">Horario</h3>
           <ul className="text-gray-600">
-            <li>Lunes a Sabado: 8:00 AM - 7:00 PM</li>
-            <li>Domingos y Feriados: 8:00 AM - 2:00 PM</li>
-
+            <li>Lunes a Viernes: 9:00 AM - 7:00 PM</li>
+            <li>Sábados: 9:00 AM - 6:00 PM</li>
+            <li>Domingos: Cerrado</li>
           </ul>
         </div>
       </div>
 
       <div className="container mt-8 pt-8 border-t border-gray-200">
         <p className="text-center text-gray-500 text-sm">
-          © {new Date().getFullYear()} Shua Makeup & Beauty. Todos los derechos reservados.
+          © {new Date().getFullYear()} <span className="text-primary">Shua Makeup & Beauty</span>. Todos los derechos
+          reservados.
         </p>
       </div>
     </footer>
