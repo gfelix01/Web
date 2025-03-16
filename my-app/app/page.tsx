@@ -21,7 +21,7 @@ export default function Home() {
               Resalta tu belleza natural con nuestros servicios profesionales
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 animate-pulse-fuchsia">
+              <Button asChild size="lg" variant="glow">
                 <Link href="/servicios">Ver Servicios</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
@@ -107,7 +107,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 animate-pulse-fuchsia">
+            <Button asChild size="lg" variant="glow">
               <Link href="/servicios">Ver todos los servicios</Link>
             </Button>
           </div>
@@ -145,7 +145,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 animate-pulse-fuchsia">
+            <Button asChild size="lg" variant="glow">
               <Link href="/promociones">Ver todas las promociones</Link>
             </Button>
           </div>
@@ -251,7 +251,7 @@ export default function Home() {
           </div>
 
           <div className="mt-12 text-center">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 animate-pulse-fuchsia">
+            <Button asChild size="lg" variant="glow">
               <Link href="/contacto">Agenda tu cita hoy</Link>
             </Button>
           </div>
@@ -267,7 +267,7 @@ export default function Home() {
               <p className="mb-8 opacity-90">
                 Agenda tu cita hoy mismo y déjanos transformar tu imagen con nuestros servicios profesionales.
               </p>
-              <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 animate-pulse-fuchsia">
+              <Button asChild size="lg" variant="glow">
                 <Link href="/contacto">Agendar Cita</Link>
               </Button>
             </div>

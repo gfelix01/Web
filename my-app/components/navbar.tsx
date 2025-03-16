@@ -38,7 +38,7 @@ export function Navbar() {
           <Link href="/contacto" className="text-sm font-medium transition-colors hover:text-primary">
             Contacto
           </Link>
-          <Button asChild variant="default" className="bg-primary hover:bg-primary/90 animate-pulse-fuchsia">
+          <Button asChild variant="glow" className="bg-primary hover:bg-primary/90 animate-pulse-fuchsia">
             <Link href="tel:8296418720" className="flex items-center gap-2">
               <Phone size={16} />
               <span>829-641-8720</span>
@@ -85,7 +85,7 @@ export function Navbar() {
               >
                 Contacto
               </Link>
-              <Button asChild variant="default" className="mt-2 bg-primary hover:bg-primary/90">
+              <Button asChild variant="glow" className="mt-2 bg-primary hover:bg-primary/90">
                 <Link href="tel:8296418720" className="flex items-center justify-center gap-2">
                   <Phone size={16} />
                   <span>829-641-8720</span>
