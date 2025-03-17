@@ -69,6 +69,14 @@ const nextConfig = {
     
     return config;
   },
+  
+  getName: (input) => {
+    if (!input || !input[1]) {
+      // Handle the case where input is null/undefined or input[1] is not available
+      return 'defaultName'; // Provide a fallback value
+    }
+    return input[1];
+  },
 }
 
 module.exports = nextConfig;
