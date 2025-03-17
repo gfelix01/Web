@@ -69,14 +69,15 @@ const nextConfig = {
     
     return config;
   },
-  
-  getName: (input) => {
-    if (!input || !input[1]) {
-      // Handle the case where input is null/undefined or input[1] is not available
-      return 'defaultName'; // Provide a fallback value
-    }
-    return input[1];
-  },
 }
 
+// Fix the getName function if it is still needed elsewhere
+function getName(input) {
+  if (!input) {
+    throw new Error("Input cannot be null or undefined");
+  }
+  return input[1]; // Ensure input is valid before accessing properties
+}
+
+// Export the configuration
 module.exports = nextConfig;
