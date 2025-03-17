@@ -1,14 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true, // Ayuda a detectar problemas en desarrollo
-  output: 'standalone', // Recomendado para despliegues en Vercel y Docker
-  
-  // Add Turbopack configuration
-  experimental: {
-    turbo: {
-      // Turbopack-specific options can go here
-    },
+  images: {
+    formats: ['image/avif', 'image/webp'], // Mantén esto si quieres optimización para estos formatos
   },
+  reactStrictMode: true,
 };
 
 export default nextConfig;
+
