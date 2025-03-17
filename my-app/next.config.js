@@ -53,6 +53,19 @@ const nextConfig = {
         return minimizer;
       }
     );
+
+    // Completely remove the problematic Object.name override
+    // Instead, modify the specific function that uses it or use a safer approach
+    // Note: Don't monkey patch Object.name as it can cause unexpected issues
+    
+    // You can use a utility function instead if needed
+    const safePathExtract = function(path) {
+      if (!path) return '';
+      const match = path.match(/\/([^\/]+)$/);
+      return match && match[1] ? match[1] : '';
+    };
+    
+    // Use safePathExtract where needed in your config
     
     return config;
   },
