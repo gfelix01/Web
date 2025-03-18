@@ -1,4 +1,5 @@
 import * as React from "react"
+import Image from "next/image"
 
 import { cn } from "@/lib/utils"
 
@@ -73,4 +74,14 @@ const CardFooter = React.forwardRef<
 ))
 CardFooter.displayName = "CardFooter"
 
-export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent }
+const CardImage = React.forwardRef<
+  HTMLDivElement,
+  { src: string; alt: string; className?: string }
+>(({ src, alt, className }, ref) => (
+  <div ref={ref} className={cn("relative w-full h-64", className)}>
+    <Image src={src} alt={alt} layout="fill" objectFit="cover" />
+  </div>
+));
+CardImage.displayName = "CardImage";
+
+export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent, CardImage }
