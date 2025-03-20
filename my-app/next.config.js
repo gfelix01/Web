@@ -4,7 +4,7 @@ module.exports = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'example.com', // Replace with your domain
+        hostname: 'shuamakeup.comm', // Replace with your domain
         pathname: '/**',
       },
     ],
