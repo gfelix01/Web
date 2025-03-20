@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:optimized": "NODE_OPTIONS='--max-old-space-size=16384' next build"
   },
   "engines": {
     "node": "20.x"
