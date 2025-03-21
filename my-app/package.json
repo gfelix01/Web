@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "cross-env NODE_OPTIONS='--max-old-space-size=16384' next build",
     "start": "next start",
     "lint": "next lint",
     "build:optimized": "NODE_OPTIONS='--max-old-space-size=16384' next build"
@@ -18,9 +18,9 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.479.0",
     "my-app": "file:",
-    "next": "^14.2.25",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "next": "^15.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7"
   },

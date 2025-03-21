@@ -9,10 +9,5 @@ module.exports = {
       },
     ],
   },
-  // Remove the deprecated "images.domains" configuration
-  experimental: {
-    workerThreads: false, // Disable worker threads to reduce memory overhead
-    cpus: 1, // Limit CPU usage to avoid overloading
-  },
   // ...existing code...
 };
