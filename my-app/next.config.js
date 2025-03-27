@@ -4,7 +4,7 @@ module.exports = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'shuamakeup.comm', // Replace with your domain
+        hostname: 'web-hgei0xmoj-gfelix01s-projects.vercel.app', // Asegúrate de que el dominio es correcto 
         pathname: '/**',
       },
     ],
