@@ -1,13 +1,14 @@
-module.exports = {
-  // ...existing code...
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'web-hgei0xmoj-gfelix01s-projects.vercel.app', // Asegúrate de que el dominio es correcto 
+        hostname: '**',
         pathname: '/**',
       },
     ],
   },
-  // ...existing code...
-};
+}
+
+module.exports = nextConfig
